@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yhteys – Hoitola Lumi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">Hoitola Lumi</div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="services.html">Palvelut</a></li>
+        <li><a href="about.html">Meistä</a></li>
+        <li><a href="contact.html" class="active">Yhteys</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+</nav>
+
+<section class="contact-section">
+    <form class="contact-form">
+        <h2>Ota yhteyttä</h2>
+        <input type="text" placeholder="Nimi" required>
+        <input type="email" placeholder="Sähköposti" required>
+        <textarea placeholder="Viesti" rows="5" required></textarea>
+        <button class="btn">Lähetä</button>
+    </form>
+
+    <div class="contact-image">
+        <img src="kuvat/tesaphotography-spa-2608450_1920.jpg" alt="Spa kuva">
+    </div>
+</section>
+
+<footer>© 2026 Hoitola Lumi</footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("open");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoitola Lumi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">Hoitola Lumi</div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Etusivu</a></li>
+        <li><a href="services.html">Palvelut</a></li>
+        <li><a href="about.html">Meistä</a></li>
+        <li><a href="contact.html">Yhteys</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+</nav>
+
+<header class="hero" style="background-image: url('kuvat/tesaphotography-spa-2608450_1920.jpg');">
+    <div class="hero-content">
+        <h1>Tervetuloa Hoitola Lumiin</h1>
+        <p>Rauhaa, rentoutusta ja kokonaisvaltaista hyvinvointia.</p>
+        <a href="services.html" class="btn">Tutustu palveluihin</a>
+    </div>
+</header>
+
+<section class="services-preview">
+    <h2>Suosituimmat hoidot</h2>
+
+    <div class="service-grid">
+
+        <!-- Syväpuhdistava hoito -->
+        <div class="service-card" style="background-image: url('kuvat/komarova_anastasiya-woman-6479874_1920.jpg');">
+            <h3>Syväpuhdistava hoito</h3>
+        </div>
+
+        <!-- Hellävarainen ihonhoito -->
+        <div class="service-card" style="background-image: url('kuvat/olgavolkovitskaia-brush-6939330_1920.jpg');">
+            <h3>Hellävarainen ihonhoito</h3>
+        </div>
+
+        <!-- Rentoutushoidot -->
+        <div class="service-card" style="background-image: url('kuvat/tesaphotography-spa-2608450_1920.jpg');">
+            <h3>Rentoutushoidot</h3>
+        </div>
+
+    </div>
+</section>
+
+<footer>© 2026 Hoitola Lumi</footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("open");
+}
+</script>
+
+</body>
+</html>

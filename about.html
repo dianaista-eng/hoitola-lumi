@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meistä – Hoitola Lumi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">Hoitola Lumi</div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="services.html">Palvelut</a></li>
+        <li><a href="about.html" class="active">Meistä</a></li>
+        <li><a href="contact.html">Yhteys</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+</nav>
+
+<section class="about-section">
+    <div class="about-text">
+        <h1>Meistä</h1>
+        <p>
+            Hoitola Lumi on rauhallinen ja luonnollinen hyvinvoinnin keidas, jossa
+            yhdistyvät lempeät hoidot, laadukkaat tuotteet ja kokonaisvaltainen
+            rentoutuminen. Meille tärkeintä on, että jokainen asiakas lähtee
+            hoitolasta kevyempänä, levänneempänä ja tasapainoisempana.
+        </p>
+        <p>
+            Hoitomme perustuvat luonnollisuuteen, pehmeisiin kosketuksiin ja
+            rauhoittavaan ilmapiiriin. Tervetuloa hengähtämään.
+        </p>
+    </div>
+
+    <div class="about-image">
+        <img src="kuvat/komarova_anastasiya-woman-6479874_1920.jpg" alt="Hoitola kuva">
+    </div>
+</section>
+
+<footer>© 2026 Hoitola Lumi</footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("open");
+}
+</script>
+
+</body>
+</html>
